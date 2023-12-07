@@ -1,8 +1,9 @@
-export default function ContactPage(){
+import styles from '@/styles/contact.module.css'
 
+export default function ContactPage(){
     return(
         <>
-            <h1>I am a contact page</h1>
+            <h1 className={styles.red}>I am a contact page</h1>
         </>
     )
 }
