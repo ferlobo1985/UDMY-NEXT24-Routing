@@ -1,13 +1,13 @@
-import Nav from '@/components/nav'
+import Link from 'next/link'
 
 export default function HomePage(){
-
-  return(
-    <>
-      <h1>I am home</h1>
-      <div>
-        <Nav/>
-      </div>
-    </>
-  )
+    return(
+        <>
+            <h1>Home</h1>
+            <ul>
+                <li><Link href="/admins">Admins</Link></li>
+                <li><Link href="/users">Users</Link></li>
+            </ul>
+        </>
+    )
 }
